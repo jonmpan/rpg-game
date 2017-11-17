@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		RPG Homework	
+	</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  	<link rel="stylesheet" href="style.css">
+</head>
+
+<audio controls loop id="songplayer" src="audio/newshound.mp3" autoplay></audio>
+
+<body class="noSelect">
+
+	<div class="container">
+
+		<div id="startingpage">
+			<div id="container">
+				<h1>Select Your Touhou! Also, Click on the Background!</h1>
+				<div class="row">
+					<div class="suwako players col-xs-3"><img class="heroicons img-fluid" src="images/suwako.gif"></div>					
+					<div class="reimu players col-xs-3"><img class="heroicons img-fluid" src="images/reimu.gif"></div>		
+					<div class="marisa players col-xs-3"><img class="heroicons img-fluid" src="images/marisa.gif"></div>						
+					<div class="cirno players col-xs-3"><img class="heroicons img-fluid" src="images/cirno.gif"></div>
+				</div>
+			</div>
+		
+			<div id="cirnoSelect">
+				<div class="chardescriptions">
+					<h3>Ice Fairy - Cirno</h3>
+					<p>Hi I'm Cirno!! I'm the Strongest and Bestest Touhou around! I Love Freezing Frogs :D :D. Also, that magician was such a wimp last time I fought her!!1!!</p>
+				</div>
+			</div>
+			
+			<div id="reimuSelect">
+				<div class="chardescriptions">
+					<h3>Shrine Maiden - Hakurei Reimu</h3>
+					<p>Shoot first, ask questions later! If there's a youkai that needs to be exterminated, call me! (Also accepting donations at the Hakurei Shrine)</p>
+				</div>
+			</div>
+			
+			<div id="marisaSelect">
+				<div class="chardescriptions">
+					<h3>Ordinary Magician - Marisa Kirisame</h3>
+					<p>My life is way shorter than yours anyway, so can't you just take back everythin' after I kick the bucket? I'm just borrowin' until then ze.</p>
+				</div>
+			</div>
+			
+			<div id="suwakoSelect">
+				<div class="chardescriptions">
+					<h3>Former Goddess - Suwako Moriya</h3>
+					<p>Lately someone has been freezing frogs and that just rubs me the wrong way... Time to find the culprit!</p>
+				</div>
+			</div>
+		
+		</div>
+
+		<div id="gamepage">
+			<div id="container">
+				
+					<div class="row">
+						<h2>Player</h2>
+						<div class="col-xs-3">
+						<div id="player"></div>
+						</div>
+					</div>
+
+					<div class="row">
+						<h2 id="victorytext">Select Opponent</h2>
+						<div id="enemies">
+							<div class="enemy3container col-xs-3">
+								<div id="enemy3"></div>	
+							</div>
+							<div class="enemy2container col-xs-3">
+								<div id="enemy2"></div>
+							</div>
+							<div class="enemy1container col-xs-3">
+								<div id="enemy1"></div>
+							</div>
+						</div>
+					</div>
+			
+			</div>
+			
+		</div>
+
+		<div id="fightpage">
+			<div id="container">
+				<div>
+					<div class="row">
+						<div class="col-sm-4">
+							<h2>Player (Attacker)</h2>
+							<h3 id="attackerHP"></h3>
+							<div id="attacker"></div>
+						</div>
+						<div class="col-sm-4">	
+							<h2>Defender</h2>
+							<h3 id="defenderHP"></h3>
+							<div id="defender"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button id="attackbutton">Attack</button>
+			<button id="nextbutton">Next!</button>
+			<button id="gameoverbutton">GameOver!</button>
+			<button id="resetbutton">Victory!</button>
+			<div id="cirnoDefeat"></div>
+			<div id="reimuDefeat"></div>
+			<div id="marisaDefeat"></div>
+			<div id="suwakoDefeat"></div>
+			<div id="cirnoPlayerDefeat"></div>
+			<div id="reimuPlayerDefeat"></div>
+			<div id="marisaPlayerDefeat"></div>
+			<div id="suwakoPlayerDefeat"></div>
+		</div>
+
+		<div id="animationpage">
+			<div id="container">
+				<div>
+					<div class="row">
+						<div class="col-sm-6">
+							<h2>Player (Attacker)</h2>
+							<h3 id="attackerHP"></h3>
+							<div id="attackeranimate"></div>
+						</div>
+						<div class="col-sm-6">	
+							<h2>Defender</h2>
+							<h3 id="defenderHP"></h3>
+							<div id="defenderanimate"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+<!-- 		<div id="victory">
+			<div id="container">
+				<div>
+					<h2>You Win!</h2>
+				</div>
+			</div>
+			
+		</div> -->
+	</div>
+	</div>
+	<canvas></canvas>
+
+	<script type="text/javascript" src="canvas.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

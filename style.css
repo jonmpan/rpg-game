@@ -1,0 +1,149 @@
+audio, #gamepage, #fightpage , #victory, #animationpage, #gameoverbutton, #resetbutton{
+	display: none;
+}
+
+p {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 3em;
+}
+
+button {
+	padding: 30px;
+	border: solid blue 5px;
+	background-color: red;
+}
+
+.chardescriptions{
+	width: 500px;
+}
+
+#cirnoSelect, #reimuSelect, #marisaSelect, #suwakoSelect, #cirnoPlayerDefeat, #reimuPlayerDefeat, #marisaPlayerDefeat, #suwakoPlayerDefeat{
+	height: 500px;
+	width: 500px;
+	position:fixed;
+	bottom: 0;
+	left: -1000px;
+	z-index: 0;
+	padding-left: 500px;
+	padding-top: 200px;
+}
+
+#cirnoSelect {
+	background-image: url(images/select-cirno.png);
+}
+#reimuSelect {
+	background-image: url(images/select-reimu.png);
+}
+#marisaSelect {
+	background-image: url(images/select-marisa.png);
+}
+#suwakoSelect {
+	background-image: url(images/select-suwako.png);
+}
+#cirnoPlayerDefeat{
+	background-image: url(images/cirno-defeated.png);
+} 
+#reimuPlayerDefeat{
+	background-image: url(images/reimu-defeated.png);
+}  
+#marisaPlayerDefeat{
+	background-image: url(images/marisa-defeated.png);
+}  
+#suwakoPlayerDefeat{
+	background-image: url(images/suwako-defeated.png);
+} 
+
+#cirnoDefeat, #reimuDefeat, #marisaDefeat, #suwakoDefeat{
+	height: 500px;
+	width: 500px;
+	position:fixed;
+	bottom: 0;
+	right: -500px;
+	z-index: 0;
+}
+
+#cirnoDefeat{
+	background-image: url(images/cirno-defeated.png);
+}
+
+#reimuDefeat{
+	background-image: url(images/reimu-defeated.png);
+}
+
+#marisaDefeat{
+	background-image: url(images/marisa-defeated.png);
+}
+
+#suwakoDefeat{
+	background-image: url(images/suwako-defeated.png);
+}
+
+.flipH {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.heroicons, #enemies {
+	max-width: 100%;
+	height: auto;
+}
+
+#reimu {
+	max-width: 150%;
+}
+
+#marisa {
+	max-width: 300%;
+}
+
+
+/*body {
+        background: url(images/background.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        color: white;
+}*/
+
+/*body {
+	background: -webkit-canvas(squares);
+	margin: 0;
+	overflow: hidden;
+}*/
+
+canvas {
+	position: fixed;
+	    background: url(images/background.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        color: white;
+	top:0;
+	z-index: -1;
+	background:
+    /* top, transparent black, faked with gradient */ 
+}
+
+
+body {
+	z-index: 1;
+	color: white;
+}
